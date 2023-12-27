@@ -1,0 +1,21 @@
+STRUCTURE OF THE WEBSITE
+
+-
+- HEADER
+-      logo
+-      Nav item
+-
+- BODY
+-      search bar
+-      RestrauntsContainer
+-       RestrauntCard
+-              img
+-              name
+-              star rating
+-              time
+-
+- FOOTER
+-      copyright
+-      link
+-      address
+-      contact

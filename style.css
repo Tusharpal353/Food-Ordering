@@ -1,0 +1,52 @@
+h1{
+    color: red ;
+}
+
+.Header{
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px;
+}
+.logo{
+    width: 100px;
+    /* height: 100px; */
+}
+
+.nav-items > ul {
+    display: flex;
+    list-style-type: none;
+
+}
+.nav-items > ul > li {
+   padding: 5px;
+   margin: 10px;
+
+}
+.search-bar{
+    padding: 10px;
+}
+
+.res-container{ 
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.res-card{
+    margin: 5px;
+    /* border: solid 1px; */
+    width: 200;
+    /* height: 360px; */
+    background-color: rgb(231, 225, 225);
+    /* border: 1px solid black; */
+ 
+}
+.res-card:hover{
+    border: solid 1px black;
+    cursor: pointer;
+}
+.kfc-logo{
+    /* margin: 10px;
+    padding: 11px; */
+    height: 164px;
+    width: 200px;
+}
