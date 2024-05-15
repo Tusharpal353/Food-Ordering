@@ -2,7 +2,7 @@ import React from "react";
 import ReactDom from "react-dom";
 import Header from "./Components/header";
 import Body from "./Components/Body";
-
+import '.././style.css'
 // const heading = React.createElement("h1", {}, "Hello world")
 // const heading1 = <h1>This is heading</h1>
 
@@ -76,6 +76,7 @@ const AppLayout = () => {
     <div className="app">
       <Header />
       <Body />
+
     </div>
   );
 };
