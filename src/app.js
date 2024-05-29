@@ -1,8 +1,11 @@
 import React from "react";
-import ReactDom from "react-dom";
+import ReactDom from "react-dom/client";
 import Header from "./Components/header";
 import Body from "./Components/Body";
 import '.././style.css'
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+import Aboutus from "./Components/Aboutus";
+import Contact from "./Components/Contact";
 // const heading = React.createElement("h1", {}, "Hello world")
 // const heading1 = <h1>This is heading</h1>
 
@@ -71,15 +74,57 @@ const Kfcobj = {
   },
 };
 
+
+
+
+
+
+
 const AppLayout = () => {
   return (
     <div className="app">
       <Header />
-      <Body />
+
+      <Outlet />
 
     </div>
   );
 };
 
+
+
+
+const appRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <AppLayout />,
+    children: [
+      {
+        path: "/",
+        element: <Body />
+      },
+
+
+
+      {
+        path: "/about",
+        element: <Aboutus />
+      },
+      {
+        path: "/contact",
+        element: <Contact />
+      }]
+
+  },
+  {
+    path: "/about",
+    element: <Aboutus />
+  },
+  {
+    path: "/contact",
+    element: <Contact />
+  }
+])
+
 const root = ReactDom.createRoot(document.getElementById("root"));
-root.render(<AppLayout />);
+root.render(<RouterProvider router={appRouter} />);

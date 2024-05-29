@@ -1208,7 +1208,7 @@ const resList = [
       cuisines: ["Biryani", "Kebabs", "Lucknowi", "Hyderabadi"],
       avgRating: 4.4,
       parentId: "13813",
-      avgRatingString: "4.4",
+
       totalRatingsString: "1K+",
       sla: {
         deliveryTime: 26,

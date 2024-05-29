@@ -1,52 +1,69 @@
-h1{
-    color: red ;
+h1 {
+    color: red;
 }
 
-.Header{
+.Header {
     display: flex;
     justify-content: space-between;
     border: solid 1px;
 }
-.logo{
+
+.logo {
     width: 100px;
-    /* height: 100px; */
+
 }
 
-.nav-items > ul {
+.nav-items>ul {
     display: flex;
     list-style-type: none;
 
 }
-.nav-items > ul > li {
-   padding: 5px;
-   margin: 10px;
+
+.nav-items>ul>li {
+    padding: 5px;
+    margin: 10px;
 
 }
-.search-bar{
+
+.search-bar {
     padding: 10px;
 }
 
-.res-container{ 
+.res-container {
     display: flex;
     flex-wrap: wrap;
 
 }
-.res-card{
+
+.res-card {
     margin: 5px;
-    /* border: solid 1px; */
-    width: 200;
-    /* height: 360px; */
+
+    width: 200px;
+
     background-color: rgb(231, 225, 225);
-    /* border: 1px solid black; */
- 
+
+
 }
-.res-card:hover{
+
+.res-card:hover {
     border: solid 1px black;
     cursor: pointer;
 }
-.kfc-logo{
-    /* margin: 10px;
-    padding: 11px; */
+
+.kfc-logo {
+
     height: 164px;
     width: 200px;
+}
+
+
+.login {
+    padding: 0 20px;
+}
+
+
+.filter {
+    display: flex;
+    margin: 5px;
+    padding: 2px;
 }
