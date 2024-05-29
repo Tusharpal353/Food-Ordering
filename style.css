@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 h1 {
     color: red;
+=======
+<<<<<<< HEAD
+h1{
+    color: red ;
+>>>>>>> 4d9aca63547f9b55f501ba633b97db1c8edc2033
 }
 
 .Header {
@@ -54,6 +60,7 @@ h1 {
 
     height: 164px;
     width: 200px;
+<<<<<<< HEAD
 }
 
 
@@ -66,4 +73,59 @@ h1 {
     display: flex;
     margin: 5px;
     padding: 2px;
+=======
+=======
+h1{
+    color: red ;
+}
+
+.Header{
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px;
+}
+.logo{
+    width: 100px;
+    /* height: 100px; */
+}
+
+.nav-items > ul {
+    display: flex;
+    list-style-type: none;
+
+}
+.nav-items > ul > li {
+   padding: 5px;
+   margin: 10px;
+
+}
+.search-bar{
+    padding: 10px;
+}
+
+.res-container{ 
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.res-card{
+    margin: 5px;
+    /* border: solid 1px; */
+    width: 200;
+    /* height: 360px; */
+    background-color: rgb(231, 225, 225);
+    /* border: 1px solid black; */
+ 
+}
+.res-card:hover{
+    border: solid 1px black;
+    cursor: pointer;
+}
+.kfc-logo{
+    /* margin: 10px;
+    padding: 11px; */
+    height: 164px;
+    width: 200px;
+>>>>>>> 9f64da325ef260fc7e84d7b8f5e4c15c6130ee79
+>>>>>>> 4d9aca63547f9b55f501ba633b97db1c8edc2033
 }

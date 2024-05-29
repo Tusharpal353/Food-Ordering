@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 import "./Header.css"
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Aboutus from "./Aboutus";
 import Contact from "./Contact";
+=======
+<<<<<<< HEAD
+>>>>>>> 4d9aca63547f9b55f501ba633b97db1c8edc2033
 const Header = () => {
   const [BtnName, setBtnName] = useState("login")
   return (
@@ -64,4 +68,32 @@ const Header = () => {
 };
 
 export default Header;
+<<<<<<< HEAD
 
+=======
+=======
+const Header = () => {
+  return (
+    <divv className="Header">
+      <div className="logoContainer">
+        <img
+          className="logo"
+          src="https://img.freepik.com/free-vector/detailed-chef-logo-template_23-2148987940.jpg?w=740&t=st=1698662329~exp=1698662929~hmac=781a955b9b8b178528124e0987986e8929c29174dd334b58fd1db4930c91620d"
+          alt="logo"
+        />
+      </div>
+      <div className="nav-items">
+        <ul>
+          <li>Home</li>
+          <li>About us </li>
+          <li>Contact us</li>
+          <li>cart</li>
+        </ul>
+      </div>
+    </divv>
+  );
+};
+
+export default Header;
+>>>>>>> 9f64da325ef260fc7e84d7b8f5e4c15c6130ee79
+>>>>>>> 4d9aca63547f9b55f501ba633b97db1c8edc2033
