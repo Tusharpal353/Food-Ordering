@@ -3,10 +3,11 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Header from "./Components/Header";
 import Body from "./Components/Body";
-import AboutUs from "./Components/AboutUs";
+//import AboutUs from "./Components/AboutUs";
 import Contact from "./Components/Contact";
+import RestrauntMenu from "./Components/RestrauntMenu";
 import '../style.css';
-
+import { lazy, Suspense } from "react";
 // Error Boundary Component
 class ErrorBoundary extends React.Component {
   constructor(props) {
@@ -30,6 +31,9 @@ class ErrorBoundary extends React.Component {
   }
 }
 
+const AboutUs = lazy(() => import("./Components/AboutUs"))
+
+
 const AppLayout = () => (
   <div className="app">
     <Header />
@@ -47,13 +51,22 @@ const appRouter = createBrowserRouter([
         element: <Body />,
       },
       {
+
+        //USING LAZY LOADING FOR THIS ONE
         path: "about",
-        element: <AboutUs />,
+        element:
+          <Suspense fallback={"ABOUT WILL  LOAD IN SEC"} >
+            <AboutUs />
+          </Suspense >
+        ,
       },
       {
         path: "contact",
         element: <Contact />,
-      },
+      }, {
+        path: "/restaurant/:resId",
+        element: <RestrauntMenu />
+      }
     ],
   },
 ]);
